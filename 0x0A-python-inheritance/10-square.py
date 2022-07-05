@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-"""base geometry class"""
-
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""Defines a Rectangle subclass Square."""
 Rectangle = __import__('9-rectangle').Rectangle
-
-"""class to represent a square"""
 
 
 class Square(Rectangle):
-    """square Class"""
+    """Represent a square."""
+
     def __init__(self, size):
-            """init"""
-            self.integer_validator("size", size)
-            super().__init__(size, size)
-            self.__size = size
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+        """
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
