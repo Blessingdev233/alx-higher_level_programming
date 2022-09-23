@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """sends a POST request to http://0.0.0.0:5000/search_user
    with a passed letter as a parameter"""
-from sys 
-from requests
+import sys 
+import requests
 
 
 if __name__ == '__main__':
