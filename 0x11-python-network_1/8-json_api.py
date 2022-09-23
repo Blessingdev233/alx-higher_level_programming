@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """sends a POST request to http://0.0.0.0:5000/search_user
    with a passed letter as a parameter"""
-import sys 
+import sys
 import requests
 
 
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
         response = r.json()
-        if response == {}:        
+        if response == {}:
             print("No result")
         else:
             print("[{}] {}".format(response.get('id'), response.get('name')))
